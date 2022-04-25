@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        button {
+            background: none;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post"> <!--novalidate는 나만의 유효성검사를 하고 싶을 때 사용. 브라우저 차원의 유효성 검사를 막을 때 쓴다.-->
+        <fieldset>
+            <legend>필수입력</legend>
+            <p> <!--글씨가 여러 개 있고 줄바꿈을 하고 싶다면, p tag 혹은 div tag로 묶는 것이 좋다.-->
+                <label for="username">이름:</label> <!--label과 input을 정확하게 연결할 필요가있다.-->
+                <input type="text" id="username" name="username" required minlength="2" maxlength="5" size="10" placeholder="홍길동"> <!--required는 속성이자 값이다. 브라우저 자체적으로 유효성 검사를 해주는 것.-->
+            </p>
+
+            <p>
+                <label for="useremail">이메일:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </p>
+
+            <p>
+                <label for="useremail">비밀번호:</label>
+                <input type="password" id="userpw" name="userpw" required>
+            </p>
+        </fieldset> <!--fieldset은 제목이 있어야 한다. legend를 사용. 나중에 css로 지울 수 있다. 그렇기에 반드시 구분용으로 써주어야 한다.-->
+        <fieldset>
+            <legend>부가입력</legend>
+            <div>
+                <label for="address">거주지를 선택해주세요</label>
+                <select name="address" id="address">
+                    <option value="서울시">서울시</option>
+                    <option value="경기도">경기도</option>
+                    <option value="제주도">제주도</option>
+                </select>
+            </div>
+            <div>
+                <h2>성별을 선택해주세요</h2>
+                <label for="men">남성</label>
+                <!-- radio버튼은 제대로 기능하려면 둘 다 name이 똑같아야 한다. -->
+                <input type="radio" id="men" name="gender" value="남성">
+                <!-- 값을 집어넣을 때엔 반드시 큰 따옴표를 집어넣을 것. -->
+                <label for="women">여성</label>
+                <input type="radio" id="women" name="gender" value="여성">
+            </div>
+
+            <div>
+                <h2>관심사항 체크</h2>
+                <label for="HTML">HTML</label>
+                <input type="checkbox" id="HTML" name="interest" value="HTML">
+                <label for="CSS">CSS</label>
+                <input type="checkbox" id="CSS" name="interest" value="CSS">
+                <label for="javascript">javascript</label>
+                <input type="checkbox" id="javascript" name="interest" value="javascript">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 새로운 타입</legend>
+            <div>
+                <label for="website">website</label>    
+                <input type="url" name="website" id="website">
+            </div>
+            <div>
+                <label for="birth">생년월일</label>
+                <input type="date" name="birth" id="birth">
+            </div>
+            <div>
+                <label for="lang">학습할 언어</label>
+                <input type="text" list="items">
+                <datalist id="items">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="javascript">javascript</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="career">경력기간</label>
+                <input type="number" id="career" name="career" class="career" min="0" max="10" value="1" step="2">
+                <!-- 안써도 되지만 우리의 필요에 의해 만들어지는 것들은 뒤에 쓴다. -->
+            </div>
+            <div>
+                <label for="language">학습언어 선택</label>
+                <select name="language" id="language">
+                    <optgroup label="frontend">
+                        <option value="html">html</option>
+                        <option value="css">html</option>
+                        <option value="javascript">html</option>
+                    </optgroup>
+                    <optgroup label="backend">
+                        <option value="asp">asp</option>
+                        <option value="jsp">jsp</option>
+                        <option value="php">php</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="skill">숙련도</label>
+                <input type="range" id="skill" name="skill" min="0" max="10" value="5">
+            </div>
+            <div>
+                <label for="phone">phone</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{11}"
+                maxlength="11" title="숫자만 최대 11자리까지 입력해주세요">
+            </div>
+            <div>
+                <label for="usereamils">이메일 선택</label>
+                <input type="text" id="useremails" name="useremails">@
+                <select title="이메일 서비스 선택" multiple size="2">
+                    <option value="naver.com">naver.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+            </div>
+
+        </fieldset>
+        
+        <input type="submit" value="전송"> 
+        <button>전송</button> <!--button의 기본값은 submit이다.-->
+        <button type="reset">초기화</button>
+        
+        <!-- <button><img src="send.png" alt=""></button>
+        <input type="image" src="send.png" alt="send"> -->
+    </form>
+    <hr>
+    <!-- meter와 progress는 조작을 가하기가 어렵다. 때문에 잘 안쓰는 태그들. -->
+    <meter value="3" max="10" min="0"></meter>
+    <progress value="3" max="10" min="0"></progress>
+    <hr>
+    <div class="progress">
+        <div class="bar">60</div>
+    </div>
+</body>
+</html>

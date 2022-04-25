@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter-spacing, word-spacing, line-height</title>
+    <style>
+        body {
+            font-family: '돋움',dotum,helvetica,sans-serif;
+            font-size:12px;
+        }
+
+        h1 {
+            font-size: 3em; /* 이렇게 사용하는 방법은 비추. 이렇게 사용하게 되면 위계를 잡을 필요가 없게된다.*/
+            font-weight:700; /*폰트 자체적으로 weight 중 지원하지 않는 것이 있을 수 있다.*/
+            text-decoration: overline;
+            letter-spacing: 0.12em;
+        }
+
+        em, address {
+            font-style: normal;
+            font-weight: 600;
+        }
+        :link {
+            list-style: none;
+        }
+        del {
+            font-style: oblique; /*oblique는 italic이랑 똑같다.*/
+        }
+
+        .left {
+            text-align: left;
+            word-spacing: 2em;
+        }
+
+        .center {
+            text-align: center;
+            line-height: 27px;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .etc {
+            text-align: center;
+        }
+
+        h2 {
+            width:300px;
+            border:2px solid red;
+            height: 60px;
+            text-align: center;
+            line-height:60px;
+        }
+        h3 a{
+            background-image: url(../img0.png);
+            width: 360px;
+            height: 333px;
+            display: block;
+            text-indent: -9999em;
+        }
+    </style>
+</head>
+<body>
+    <h1>글자의 정렬</h1>
+    <h2>line height</h2>
+    <h3><a href="#">Logo</a></h3>
+    <del>1,000,000원</del>
+    <p class="left">
+        <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Quaerat beatae labore porro aperiam similique saepe tenetur sapiente veritatis unde libero quod repellat suscipit esse pariatur accusantium aut ratione vero voluptatem magnam, repudiandae id nihil! Expedita cumque error, natus eaque laboriosam in quia sapiente, praesentium maxime quidem distinctio iusto excepturi explicabo.
+    </p>
+    <p class="center">
+        <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Quaerat beatae labore porro aperiam similique saepe tenetur sapiente veritatis unde libero quod repellat suscipit esse pariatur accusantium aut ratione vero voluptatem magnam, repudiandae id nihil! Expedita cumque error, natus eaque laboriosam in quia sapiente, praesentium maxime quidem distinctio iusto excepturi explicabo.
+    </p>
+    <p class="right">
+        <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Quaerat beatae labore porro aperiam similique saepe tenetur sapiente veritatis unde libero quod repellat suscipit esse pariatur accusantium aut ratione vero voluptatem magnam, repudiandae id nihil! Expedita cumque error, natus eaque laboriosam in quia sapiente, praesentium maxime quidem distinctio iusto excepturi explicabo.
+    </p>
+    <p class="etc">
+        <span>line element</span>
+        <span>line element</span>
+        <span>line element</span>
+    </p>
+    <address>
+        &copy; all right reserved. <br/>
+        contact us.
+    </address>
+</body>
+</html>

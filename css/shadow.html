@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>css3, text-shadow, box-shadow</title>
+<style>
+body{
+	font-family: tahoma,sans-serif;
+	font-size: 12px;
+}
+h1{
+	font-size: 5em;
+    color:red;
+    text-transform: uppercase;
+    text-shadow: 
+        10px 10px 0 rgba(0,0,0,0.6),
+        5px 5px 0 #00f;
+    /*
+    text-shadow: x축 y축 블러 색상
+    text-shadow: x축 y축 블러 사이즈 색상
+    */
+}
+/*
+div {
+    width:300px;
+    padding: 30px;
+    background-color: red;
+    box-shadow: x축 y축 블러 색상
+    box-shadow: inset -10px -10px 5px rgba(0,0,0,.9);
+}
+*/
+input {
+    outline:none;
+    padding:10px;
+    margin:50px 0;
+}
+input:focus {
+    box-shadow: inset 0 0 8px rgba(255,0,0,0.8);            
+}
+h2 {
+    background: red;
+    padding:50px;
+    margin:50px 0;
+    opacity:0.5;
+}
+ul ul {
+    opacity:0;
+}
+ul > li:hover ul {
+    opacity:1;
+}
+.portfolio > li {
+    position:relative;
+    list-style: none;
+    float: left;
+    margin-left:20px;
+}
+
+.hover_content {
+    position:absolute;top:0;right:0;bottom:0;left:0;width: 200px;height: 200px;background-color: rgba(255,0,0,1); text-align: center; color:white; opacity: 0;
+}
+.hover_content:hover{
+    opacity: 0.8;
+}
+a{
+ text-decoration: none; color:white;
+}
+h3{
+    padding-top:50px
+}
+</style>
+</head>
+<body>
+
+<h1>text-shadow</h1>
+
+<div>box-shadow</div>
+<input type="text" placeholder="이름을 입력하세요"/>
+
+<h2>opacity</h2>
+<ul class="portfolio">
+    <li>list item</li>
+    <li>list item
+        <ul>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+    </li>
+</ul>
+<ul class="portfolio">
+    <li>
+        <img src="http://place-hold.it/200x200">
+        <div class="hover_content">
+            <h3>img title</h3>
+            <p>img description</p>
+            <a href="#">더보기</a>
+        </div>
+    </li>
+    <li>
+        <img src="http://place-hold.it/200x200">
+        <div class="hover_content">
+            <h3>img title</h3>
+            <p>
+                img description
+            </p>
+            <a href="#">더보기</a>
+        </div>
+    </li>
+    <li>
+        <img src="http://place-hold.it/200x200">
+        <div class="hover_content">
+            <h3>img title</h3>
+            <p>
+                img description
+            </p>
+            <a href="#">더보기</a>
+        </div>
+    </li>
+</ul>
+</body>
+</html>

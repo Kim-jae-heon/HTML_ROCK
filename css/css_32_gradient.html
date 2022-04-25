@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>css3, multiple columns</title>
+<style type="text/css">
+    .linear {
+        width:300px;
+        height:300px;
+        border:2px solid black;
+        /* background:linear-gradient(방향, 색상 위치, 색상 위치); */
+        /* background:linear-gradient(to right,#2989cc 20%, #fff 20%, #fff 80%, #2989cc 80%); */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,0cfff6+50,000000+100 */
+        background: #000000; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #000000 0%, #0cfff6 50%, #000000 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #000000 0%,#0cfff6 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #000000 0%,#0cfff6 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
+
+    .Radial {
+        width:300px;
+        height:300px;
+        border:1px solid black;
+        background:radial-gradient(ellipse at center,#000 0%,#fff 100%);
+    }
+</style>
+</head>
+<body>
+	<h1>Gradient</h1>
+	<h2>Linear gradient</h2>
+	<div class="linear">
+		Linear
+	</div>
+	
+	<h2>Radial gradient</h2>
+	<div class="Radial">
+		Radial
+	</div>	
+</body>
+</html>

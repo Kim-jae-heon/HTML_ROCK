@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector priority</title>
+    <style>
+        body {
+            font: 12px/1.6 Verdana, sans-serif;
+        }
+        #text {
+            color:green;
+        }
+        .area p {
+            color:blue;
+        }
+        p {
+            color:red !important;
+        }
+        #text2 {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="area">
+        <p id="text" style="color:blue;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem hic cupiditate ipsum. Commodi blanditiis veniam magni ipsum quasi esse nemo aperiam sit unde officiis. Magnam, rerum atque fuga voluptatum eum tenetur accusantium quae odit sequi, earum ad consequuntur! Distinctio vel non esse a voluptatibus quis doloribus id doloremque sint incidunt.
+        </p>
+        <p id="text2" style="color:blue;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem hic cupiditate ipsum. Commodi blanditiis veniam magni ipsum quasi esse nemo aperiam sit unde officiis. Magnam, rerum atque fuga voluptatum eum tenetur accusantium quae odit sequi, earum ad consequuntur! Distinctio vel non esse a voluptatibus quis doloribus id doloremque sint incidunt.
+        </p>
+    </div>
+</body>
+</html>

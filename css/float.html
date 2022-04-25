@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        h2 {
+            background: silver;
+            margin-bottom: 50px;
+        }
+        .thumb {
+            float:left;
+        }
+        .content p {
+            word-break: break-all;
+        }
+        .break {
+            clear:both;
+        }
+        img {
+            vertical-align: top;
+        }
+        .portfolio {
+            background: green;
+        }
+        .portfolio:after{
+            content:'';
+            clear:both;
+            display:block;
+        }
+
+        .portfolio p {
+            border: 2px solid;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>float</h1>
+    <h2>float 특징</h2>
+    <div class="content">
+    <img class="thumb" src="https://s.pstatic.net/static/www/mobile/edit/20220414/mobile_211907846810.jpg" alt="">
+    <p>
+        paragraph paragraph 
+        paragraph <br class="break"> paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+        paragraph paragraph 
+    </p>
+    </div>
+    <hr>
+    <div class="portfolio">
+        <p>
+            <img src="https://s.pstatic.net/static/www/mobile/edit/20220414/mobile_211907846810.jpg" alt="portfolio image">
+        </p>
+        <p>
+            <img src="https://s.pstatic.net/static/www/mobile/edit/20220414/mobile_211907846810.jpg" alt="portfolio image">
+        </p>
+        <p>
+            <img src="https://s.pstatic.net/static/www/mobile/edit/20220414/mobile_211907846810.jpg" alt="portfolio image">
+        </p>
+        <!-- <div class="clear"></div> -->
+    </div>
+</body>
+</html>

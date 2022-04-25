@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Rotatable 3D Cube</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="3d_cube.css">
+
+  
+</head>
+
+<body>
+  <div class="wrapper">
+
+  <div class="perspective">
+    <input type="radio" id="rotate" name="rotate">
+    <label for="rotate">auto</label>
+
+    <input type="radio" id="front" name="rotate">
+    <label for="front">front</label>
+
+    <input type="radio" id="left" name="rotate">
+    <label for="left">left</label>
+
+    <input type="radio" id="back" name="rotate">
+    <label for="back">back</label>
+
+    <input type="radio" id="right" name="rotate">
+    <label for="right">right</label>
+
+    <input type="radio" id="top" name="rotate">
+    <label for="top">top</label>
+
+    <input type="radio" id="bottom" name="rotate">
+    <label for="bottom">bottom</label>
+
+    <div class="cube">
+      <div class="front">
+        <img src="img/front.jpg">
+      </div>
+      <div class="back">
+        <img src="img/back.jpg">
+      </div>
+      <div class="top">
+        <img src="img/top.jpg">
+      </div>
+      <div class="bottom">
+        <img src="img/bottom.jpg">
+      </div>
+      <div class="left">
+        <img src="img/left.jpg">
+      </div>
+      <div class="right">
+        <img src="img/right.jpg">
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>boxmodel</title>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px/1.6 arial,sans-serif;
+    /* 
+        font-size: 12px;
+        line-height: 1.6;
+        font-family: arial,sans-serif
+        를 겹쳐쓴 것
+    */
+}
+.boxmodel {		
+	width: 500px; /*contents의 넓이를 500px로 준 것. 즉, width를 주면 content를 건드는 것*/
+    /* height:100px; paragraph에 height를 주는 것은 좋은 판단이 아니다. */
+    /*
+    border-width: 5px 20px 1px 10px;
+    border-style: solid dotted dashed solid;
+    border-color: red orange blue yellow;
+
+    border: 5px solid red를 나누어 놓은 것
+    
+    border-right: 5px solid red;
+    border-right-width: 5px;
+    border-right-style: solid;
+    border-right-color: red;
+
+    */
+    /* 
+    border-radius: 20px 5px 0 50px; 
+    border-top-right-radius: 50px;
+    border-top-right-radius:100px 50px;
+    border-radius:100px/50px;
+    padding: 10px 50px 100px 20px;
+    margin:100px 50px 200px 200px;
+    */    
+    margin: 100px auto;
+    display:block;
+    border:5px solid red;
+    padding:20px;
+    box-sizing: ;
+}
+
+.boxmodel p {
+    /* padding:20px; 크기가 늘어나지 않음. 왜? p tag안에 넓이가 따로 적용되어있지 않기 때문에. */
+}
+
+span{
+    margin-left:0;
+}
+
+.circle {
+    width:300px;
+    height:300px;
+    background:green;
+    color:#fff;
+    border:2px solid black;
+    border-radius: 50%; 
+    text-align:center;
+    font-size:5em;
+    line-height:300px;
+}
+
+.box {
+    width:500px;
+    border:3px solid;
+    background: #ddd;
+    margin:20px;
+}
+
+.second {
+    margin-top:40px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="boxmodel">
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+</div>
+
+<span>inline element</span>
+
+<div class="circle">
+	circle
+</div>
+
+<div class="box">box</div>
+<div class="box second">box</div>
+<div class="box">box</div>
+
+</body>
+</html>

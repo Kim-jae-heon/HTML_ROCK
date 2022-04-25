@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>white-space</title>
+    <style>
+        body{
+            font-family: '돋움',dotum,Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        .area {
+            width: 300px;
+            background-color: silver;
+            margin-bottom: 50px;
+        }
+        .nowrap {
+            height: 40px;
+            white-space:nowrap;
+        }
+        .pre {
+            white-space:pre;
+        }
+        .pre-wrap {
+            white-space: pre-wrap;
+        }
+        .pre-line {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <p class="area nowrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus magnam est tempora adipisci? Quas repellat nisi hic. Harum amet inventore, necessitatibus dolore                      quis repudiandae autem accusamus excepturi. Similique, ratione!
+    </p>
+    <p class="area pre">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum nobis, nesciunt quia quos possimus 
+        delectus nihil odit excepturi, ullam est recusandae qui pariatur ipsum laborum odio quisquam ex? Provident?
+    </p>
+    <p class="area pre-wrap">
+        Lorem ipsum dolor, 
+        sit amet consectetur adipisicing elit. Hic dicta quo fuga corporis soluta, ad possimus vel ducimus repudiandae culpa maiores 
+        eaque architecto explicabo similique voluptatum sequi corrupti, tempore suscipit.
+    </p>
+    <p class="area pre-line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Illo numquam voluptates totam magnam distinctio aut vitae eos eum libero praesentium, nisi consectetur modi repellat veritatis quaerat quisquam fugit ut consequuntur?
+    </p>
+</body>
+</html>

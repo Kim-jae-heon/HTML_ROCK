@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+    <head>
+        <title>리스트</title> <!-- 동급의 유사한 것들이 나열 될 때 쓴다. -->
+        <meta name="viewport" content="device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>리스트</h1>
+        <h2>비순차 목록 Unordered List</h2>
+        <ul>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+        <h2>순차 목록 Ordered List</h2>
+        <ol>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ol>
+        <h2>정의 목록 Definition List</h2>
+        <dl>
+            <dt>Definition term - 용어정의, 제목의 성격을 내포</dt>
+            <dd>Definition description - 용어 설명</dd>
+            <dd>Definition description - 용어 설명</dd>
+            <dd>Definition description - 용어 설명</dd>
+        </dl>
+        <hr>
+        <h2>주의점 - 잘못된 사례 모음</h2>
+        <ul>
+            <li>list item</li>
+        </ul>
+        <ul>
+            <li>list item</li>
+        </ul>
+        <ul>
+            <li>list item</li>
+        </ul>
+        
+        <ul> <!--ul, ol, dl의 자식 요소 안에는 li태그 외 다른 태그가 올 수 없다.-->
+            <h3>title</h3>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ul>
+
+        <dl> <!-- 정상 -->
+            <dt>Definition term - 용어정의, 제목의 성격을 내포</dt>
+            <dd>Definition description - 용어 설명</dd>
+            <dt>Definition term - 용어정의, 제목의 성격을 내포</dt>
+            <dd>Definition description - 용어 설명</dd>
+            <dt>Definition term - 용어정의, 제목의 성격을 내포</dt>
+            <dd>Definition description - 용어 설명</dd>
+        </dl>
+
+        <dl> <!--오류는 아니지만 바람직하지 않음-->
+            <dt>Definition term - 용어정의, 제목의 성격을 내포</dt>
+            <dt>Definition term - 용어정의, 제목의 성격을 내포</dt>
+            <dd>Definition description - 용어 설명</dd>
+        </dl>
+
+        <hr>
+        <ol start="5" type="I">
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ol>
+        <hr>
+        <h2>메뉴</h2>
+        <ul>
+            <li>About Us
+                <ul>
+                    <li>vision</li>
+                    <li>history</li>
+                    <li>location
+                        <ul>
+                            <li>seoul</li>
+                            <li>jeju</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Works</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </body>
+</html>

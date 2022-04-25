@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block, inline</title>
+    <style>
+        h1 {
+            background-color: blue;
+            color: #fff;
+            width:300px;
+            display: inline;
+        }
+        span {
+            background-color: blue;
+            color:#fff;
+            width:300px;
+            display:block;
+        }
+        p {
+            text-align: center;
+        }
+        p a {
+            background-color: blue;
+            color:#fff;
+            text-decoration: none;
+            width:40px;
+            height:40px;
+            display:inline-block;
+            line-height: 40px;
+        }
+        .hidden {
+            display:none;
+        }
+        .hide {
+            visibility: hidden;
+        }
+        div i {
+            display:list-item;
+        }
+        .services {
+            width:800px;
+            display:table;
+            background-color: bisque;
+            border:1px solid;
+        }
+        .services div {
+            display:table-cell;
+            width:50%;
+        }
+        .overflow {
+            text-align: left;
+            background-color: silver;
+            border: 1px solid;
+            height: 100px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <span>span tag</span>
+    <div class="hidden">hidden area</div>
+    <h2 class="hide">heading 2</h2>
+    <p>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </p>
+    <div>
+        <i>list</i>
+        <i>list</i>
+        <i>list</i>
+        <i>list</i>
+    </div>
+    <div class="services">
+        <div>mobile</div>
+        <div>web application</div>
+    </div>
+    <p class="overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, autem, nam velit exercitationem sunt laudantium tenetur harum error labore officiis cumque praesentium optio voluptas eligendi, eius dolor a. Soluta atque accusantium temporibus cumque sequi ipsa perferendis, pariatur ut sed ea? Odio aut corporis, numquam quam repudiandae asperiores eaque eum atque.
+    </p>
+</body>
+</html>

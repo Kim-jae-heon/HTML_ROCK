@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 기본</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&family=Oswald:wght@300&display=swap');
+        
+        .en {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+        }
+
+        .ko {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p class="ko">
+        *우선순위
+        cascading의 의미 - 다단계의, 폭포처럼 쏟아지는 이라는 의미를 가짐.
+        ■ 동급의(같은)선택자 아래에 작성한 것이 우선순위가 높다(가장 아래 곧, 가장 최근에 작성한 것이 제일 우선순위가 높다)
+        ---> 우선순위의 점수를 따져보자
+        * 0점
+        tag 1점
+        class 10점
+        id 100점
+        inline style 1000점 (단, inline style은 사용하지 않는다. inline style도 이길 수 있는 방법이 존재한다. important! css파일을 암호화하여
+        배포하는 경우, 또는 css파일이 너무 복잡하여 이것을 뒤져서 고칠 수 있는 경우가 아닌 경우 사용.)
+    </p>
+    <p class="en">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae praesentium laborum ad nobis autem, eaque quasi sed pariatur. Iusto fugit possimus, corrupti voluptatibus est minus fuga quo eum aperiam.
+    </p>
+</body>
+</html>

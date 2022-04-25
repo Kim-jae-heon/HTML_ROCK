@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 - table</title>
+    <style>
+        /* css문법의 영역 */
+        .col1 {
+            width: 30px;
+        }
+
+        .col2 {
+            width: 300px;
+        }
+
+        .col3 {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 태그에 이름을 지정하는 2가지 방법
+    id = identity: 유일무이, 중복X
+
+    class: 하나, 하나 이상의 요소 지정-->
+    <h1>테이블</h1>
+    <p>
+        일정표, 달력, 게시판, 이력서 양식에 많이 사용. 그 외에는 테이블을 쓸 일이 없다.
+    </p>
+    <!-- 검색 상관 없이 그냥 테이블 모양만 나오도록 -> 검색 잘 되고, 내용에 충실한 테이블로: 품질지수가 높은 테이블로 변환! = 머리 몸통 다리의 구분 -->
+    <figure>
+        <figcaption>
+            <h2>일정표</h2>
+            <p>1/4분기 일정표</p>
+        </figcaption>
+        <table border="1"> <!--임시로 border 속성을 쓴 것. 지금은 비표준이 되어버렸다.-->
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col3">
+            </colgroup> <!--옛날에는 첫행에 칸의 길이를 지정해주었다. 그러나 중간에 이런 방식으로 바뀌었다. 하지만 이 방식도 바람직하지 않음. -->
+            <thead> 
+                <tr> <!--table의 row-->
+                    <th >구분</th> 
+                    <th scope="col" >제목1</th>
+                    <th scope="col" >제목2</th>
+                    <th scope="col" >제목3</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>data11 data data data data</td> <!-- table data, 한 칸, 한 셀 -->
+                    <td>data12</td>
+                    <td>data13</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>data21</td>
+                    <td>data22</td>
+                    <td>data23</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>data31</td>
+                    <td>data32</td>
+                    <td>data33</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">합계</th>
+                    <td>total1</td>
+                    <td>total2</td>
+                    <td>total3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+    <hr>
+    <table border="1">         
+        <thead> 
+            <tr> 
+                <th >구분</th> 
+                <th scope="col" >제목1</th>
+                <th scope="col" >제목2</th>
+                <th scope="col" >제목3</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td colspan="3">data11 data data data data</td>  
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td rowspan="2">data21</td>
+                <td>data22</td>
+                <td>data23</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>data31</td>
+                <td>data32</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">합계</th>
+                <td>total1</td>
+                <td>total2</td>
+                <td>total3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

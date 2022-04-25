@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video audio</title>
+</head>
+<body>
+    <h1>multimedia</h1>
+    <h2>video</h2>
+    <video muted controls loop poster="poster.png" width="50%">
+        <!-- poster 재생 전에 대표 이미지 -->
+        <!-- 이렇게 작성하게되면, 세 종류의 플레이어 중 되는 것을 찾게된다.
+        그러나 막상 실전에서는 왠만하면 mp4를 이용하게 된다. -->
+        <source src="20211224_101555.mp4" type="video/mp4" />
+        <source src="20211224_101555.ogv" type="video/ogv" />
+        <source src="20211224_101555.webM" type="video/webM" />
+        <p>test - fallback contents</p>
+    </video>
+    <iframe width="894" height="503" src="https://www.youtube.com/embed/ZcvufxsthGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe src="http://ddt1630.dothome.co.kr/bootstrap" width="600" height="400" frameborder="0"></iframe>
+
+    <hr>
+    
+    <h2>audio</h2>
+    <audio src=""></audio>
+</body>
+</html>
